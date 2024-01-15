@@ -90,7 +90,7 @@
 /* Quiz Result Styles */
 .quiz-result {
   text-align: center;
-  background-color: #fff;
+  background-color: #000000;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -126,8 +126,8 @@
 .submit-button {
   background-color: #4CAF50; /* Colore verde */
   border: none;
-  border-radius: 50px; /* Rende il bottone tondo */
-  padding: 15px 30px; /* Imposta il padding per il bottone */
+  border-radius: 15px; /* Rende il bottone tondo */
+  padding: 10px 20px; /* Imposta il padding per il bottone */
   font-size: 16px;
   color: #fff; /* Colore del testo */
   cursor: pointer;

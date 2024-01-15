@@ -7,9 +7,11 @@ interface QuestionProps {
     correctAnswer: string;
   };
   onAnswer: (isCorrect: boolean) => void;
+  currentQuestionIndex: number; // Aggiungi currentQuestionIndex come prop
+  isLastQuestion: boolean; // Nuovo prop per identificare se è l'ultima domanda
 }
 
-const Question: React.FC<QuestionProps> = ({ question, onAnswer }) => {
+const Question: React.FC<QuestionProps> = ({ question, onAnswer, currentQuestionIndex, isLastQuestion }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
 
   const handleOptionClick = (option: string) => {
@@ -35,8 +37,8 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer }) => {
           </button>
         ))}
       </div>
-      <button className="submit-button" onClick={handleSubmit} disabled={!selectedAnswer}>
-        Conferma
+      <button className="submit-button" onClick={handleSubmit} disabled={!selectedAnswer && isLastQuestion}>
+        {isLastQuestion ? 'Finish' : 'Next'}
       </button>
     </div>
   );

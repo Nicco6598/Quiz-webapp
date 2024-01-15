@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const QuizIntro: React.FC = () => {
-  const [quizStarted, setQuizStarted] = useState(false);
+interface QuizIntroProps {
+  onStartQuiz: () => void;
+}
 
-  const handleStartQuiz = () => {
-    // Qui puoi aggiungere la logica per iniziare il quiz
-    setQuizStarted(true);
-  };
-
+const QuizIntro: React.FC<QuizIntroProps> = ({ onStartQuiz }) => {
   return (
     <div className="quiz-intro">
-      <h1>Welcome to the Sustainable Fashion Quiz</h1>
-      <p>Test your knowledge about sustainable fashion!</p>
-      {!quizStarted && (
-        <button onClick={handleStartQuiz}>Start Quiz</button>
-      )}
+      <h1>Benvenuto al quiz di moda sostenibile!</h1>
+      <p>Testa le tue conoscenze</p>
+      <button onClick={onStartQuiz}>Inizia Quiz</button>
     </div>
   );
 };

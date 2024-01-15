@@ -19,10 +19,10 @@ interface QuizResultProps {
 const QuizResult: React.FC<QuizResultProps> = ({ score, skillLevel, onRestart }) => {
   return (
     <div className="quiz-result">
-      <h1>Quiz Completed!</h1>
-      <p>Your Score: {score}</p>
+      <h1>Quiz Completato!</h1>
+      <p>Punteggio: {score}</p>
       <p>Skill Level: {skillLevel}</p>
-      <button onClick={onRestart}>Restart Quiz</button>
+      <button onClick={onRestart}>Ritenta quiz</button>
     </div>
   );
 };
