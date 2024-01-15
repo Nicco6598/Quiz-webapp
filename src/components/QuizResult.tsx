@@ -4,10 +4,10 @@ import React from 'react';
 
 // Definizione del tipo SkillLevel
 enum SkillLevel {
-  Base = 'base',
-  Intermedio = 'intermedio',
-  Esperto = 'esperto',
-  Maestro = 'maestro',
+  Base = 'Base',
+  Intermedio = 'Intermedio',
+  Esperto = 'Esperto',
+  Maestro = 'Maestro',
 }
 
 interface QuizResultProps {

@@ -90,7 +90,7 @@
 /* Quiz Result Styles */
 .quiz-result {
   text-align: center;
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -104,6 +104,8 @@
 
 .quiz-result p {
   font-size: 18px;
+  font-weight: 500;
+  color: #007acc;
   margin-bottom: 20px;
 }
 
