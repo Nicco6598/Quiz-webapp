@@ -39,16 +39,17 @@ Per eseguire questo progetto in locale, seguire questi passaggi:
 4. Aprire il tuo browser web e visitare http://localhost:3000 per utilizzare l'applicazione.
 
 
-Uso
-Fare clic sul pulsante "Inizia Quiz" per avviare il quiz.
-Rispondere a ciascuna domanda facendo clic su una delle opzioni fornite.
-Fare clic su "Avanti" per passare alla domanda successiva.
-Dopo aver risposto a tutte le domande, si riceverà un livello di competenza basato sulle prestazioni.
-Fare clic su "Termina" per completare il quiz e visualizzare i risultati.
-È possibile riavviare il quiz in qualsiasi momento facendo clic su "Ricomincia Quiz."
-Crediti
+## Uso
+1. Fare clic sul pulsante "Inizia Quiz" per avviare il quiz.
+2. Rispondere a ciascuna domanda facendo clic su una delle opzioni fornite.
+3. Fare clic su "Prossima domanda" per passare alla domanda successiva.
+4. Dopo aver risposto a tutte le domande, si riceverà un livello di competenza basato sulle prestazioni.
+5. Fare clic su "Finisci quiz" per completare il quiz e visualizzare i risultati.
+6. È possibile riavviare il quiz in qualsiasi momento facendo clic su "Ritenta quiz"
+
+# Crediti
 Questo progetto è stato creato da [Tuo Nome]. Non esitate a contattarmi per domande o feedback.
 
-Licenza
+# Licenza
 Questo progetto è open-source ed è disponibile con licenza MIT License.
 
