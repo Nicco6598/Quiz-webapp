@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Fashion Quiz Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Questa è una semplice applicazione web realizzata con React per creare un gioco di quiz per sensibilizzare le persone sulla moda sostenibile. Gli utenti possono rispondere a una serie di domande legate alla moda e ottenere un livello di competenza basato sulle loro prestazioni.
 
-## Available Scripts
+## Scelte Tecniche
 
-In the project directory, you can run:
+- **React**: Il progetto è stato realizzato utilizzando React per creare un'interfaccia utente dinamica e gestire in modo efficiente lo stato dell'applicazione.
 
-### `npm start`
+- **TypeScript**: TypeScript è stato utilizzato per aggiungere un tipo statico a JavaScript, offrendo una migliore esperienza di sviluppo attraverso la rilevazione anticipata degli errori di tipo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React Hooks**: Sono stati utilizzati React Hooks per gestire lo stato dei componenti e gli effetti collaterali, rendendo il codice più leggibile e manutenibile.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Stile CSS**: Lo stile dell'applicazione è stato creato utilizzando CSS per creare un'interfaccia moderna e minimalista. Include ombre moderne, design responsivo e transizioni per un'esperienza utente raffinata.
 
-### `npm test`
+## Inizio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Per eseguire questo progetto in locale, seguire questi passaggi:
 
-### `npm run build`
+1. Clonare il repository sulla tua macchina locale:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/tuo-nome/fashion-quiz-app.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigare nella directory del progetto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+   cd fashion-quiz-app
 
-### `npm run eject`
+3. Installare le dipendenze necessarie:
+    
+    ```bash
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Avviare il server di sviluppo:
+    
+    ```bash
+   npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Aprire il tuo browser web e visitare http://localhost:3000 per utilizzare l'applicazione.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Uso
+Fare clic sul pulsante "Inizia Quiz" per avviare il quiz.
+Rispondere a ciascuna domanda facendo clic su una delle opzioni fornite.
+Fare clic su "Avanti" per passare alla domanda successiva.
+Dopo aver risposto a tutte le domande, si riceverà un livello di competenza basato sulle prestazioni.
+Fare clic su "Termina" per completare il quiz e visualizzare i risultati.
+È possibile riavviare il quiz in qualsiasi momento facendo clic su "Ricomincia Quiz."
+Crediti
+Questo progetto è stato creato da [Tuo Nome]. Non esitate a contattarmi per domande o feedback.
 
-## Learn More
+Licenza
+Questo progetto è open-source ed è disponibile con licenza MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
