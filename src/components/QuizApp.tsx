@@ -58,10 +58,10 @@ const QuizApp: React.FC = () => {
         <QuizIntro onStartQuiz={handleStartQuiz} />
       ) : !quizCompleted && currentQuestionIndex < questions.length ? (
         <Question
-          question={questions[currentQuestionIndex]}
-          onAnswer={handleAnswer}
-          currentQuestionIndex={currentQuestionIndex}
-          isLastQuestion={currentQuestionIndex === questions.length - 1}
+        question={questions[currentQuestionIndex]}
+        onAnswer={(selectedAnswer) => handleAnswer(selectedAnswer)}
+        currentQuestionIndex={currentQuestionIndex}
+        isLastQuestion={currentQuestionIndex === questions.length - 1}
         />
       ) : (
         quizCompleted && (

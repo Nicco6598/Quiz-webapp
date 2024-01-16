@@ -19,7 +19,7 @@ const Question: React.FC<QuestionProps> = ({
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
 
-  const handleOptionClick = (option: string) => {
+  const handleOptionChange = (option: string) => {
     setSelectedAnswer(option);
   };
 
@@ -33,20 +33,23 @@ const Question: React.FC<QuestionProps> = ({
       <h2>{question.text}</h2>
       <div className="options">
         {question.options.map((option, index) => (
-          <button
-            key={index}
-            onClick={() => handleOptionClick(option)}
-            className={selectedAnswer === option ? 'selected' : ''}
-          >
+          <label key={index}>
+            <input
+              type="radio"
+              value={option}
+              checked={selectedAnswer === option}
+              onChange={() => handleOptionChange(option)}
+            />
             {option}
-          </button>
+          </label>
         ))}
       </div>
       <button
         className='submit-button'
         onClick={handleSubmit}
-        disabled={!selectedAnswer && !isLastQuestion}>
-        {isLastQuestion ? 'Finisci Quiz' : 'Prossima domanda'}
+        disabled={!selectedAnswer && !isLastQuestion}
+      >
+        {isLastQuestion ? 'Finish' : 'Next'}
       </button>
     </div>
   );
